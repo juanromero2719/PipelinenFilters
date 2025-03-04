@@ -20,6 +20,7 @@ public class ConvertirArchivoTextoABinario implements Filtro{
 
     @Override
     public String procesar(String entrada) {
+        
          File archivoOriginal = new File(entrada);
         
         if (!archivoOriginal.exists() || !archivoOriginal.isFile()) {
@@ -28,8 +29,8 @@ public class ConvertirArchivoTextoABinario implements Filtro{
         }
         
         String rutaBinarios = System.getProperty("user.dir") 
-                                + File.separator + "archivos" 
-                                + File.separator + "binarios";
+                                + File.separator + "archivos";
+        
         File directorioBinarios = new File(rutaBinarios);
         if (!directorioBinarios.exists()) {
             directorioBinarios.mkdirs();
