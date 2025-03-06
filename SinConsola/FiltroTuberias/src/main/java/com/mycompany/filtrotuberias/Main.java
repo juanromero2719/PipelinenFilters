@@ -58,11 +58,13 @@ public class Main {
         return resultado;
     }
     
-    public static String ejemplocinco(String rutaArchivo){
+    public static String ejemplocinco(String rutaArchivo, String palabra){
        
         Tuberia tuberia = new Tuberia();
         tuberia.agregarFiltro(new CargarArchivoDeTexto());
-        tuberia.agregarFiltro(new BuscarPalabraEnArchivoTexto());
+        BuscarPalabraEnArchivoTexto filtroBusqueda = new BuscarPalabraEnArchivoTexto();
+        filtroBusqueda.setPalabraBusqueda(palabra);
+        tuberia.agregarFiltro(filtroBusqueda);
         String resultado = tuberia.ejecutar(rutaArchivo);
         return resultado;
     }
@@ -96,12 +98,12 @@ public class Main {
         //ejemplocuatro(rutaArchivoEjemploCuatro);
         
         // Paso 5
-        //String rutaArchivoEjemploCinco = System.getProperty("user.dir") + File.separator + "ejemplocinco.txt";
-        //ejemplocinco(rutaArchivoEjemploCinco);
+        String rutaArchivoEjemploCinco = System.getProperty("user.dir") + File.separator + "ejemplocinco.txt";
+        ejemplocinco(rutaArchivoEjemploCinco, "cinco");
         
         // Paso 6
-        String rutaArchivoEjemploSeis = System.getProperty("user.dir") + File.separator + "ejemploseis.txt";
-        ejemploseis(rutaArchivoEjemploSeis);
+        //String rutaArchivoEjemploSeis = System.getProperty("user.dir") + File.separator + "ejemploseis.txt";
+        //ejemploseis(rutaArchivoEjemploSeis);
         
     }
 }

@@ -20,6 +20,7 @@ import java.nio.file.Paths;
 public class ConvertirArchivoTextoABinario{
 
     public static String convertirABinario(String rutaArchivo) {
+        
         File archivoOriginal = new File(rutaArchivo);
 
         if (!archivoOriginal.exists() || !archivoOriginal.isFile()) {
@@ -28,8 +29,8 @@ public class ConvertirArchivoTextoABinario{
         }
 
         String rutaBinarios = System.getProperty("user.dir")
-                                + File.separator + "archivos"
-                                + File.separator + "binarios";
+                                + File.separator + "archivos";
+        
         File directorioBinarios = new File(rutaBinarios);
         if (!directorioBinarios.exists()) {
             directorioBinarios.mkdirs();

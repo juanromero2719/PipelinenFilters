@@ -43,12 +43,12 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>BuscarPalabraEnArchivoTexto</artifactId>
+            <artifactId>ListarPalabrasFrecuenciaDeOcurrencia</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>ListarPalabrasFrecuenciaDeOcurrencia</artifactId>
+            <artifactId>BuscarPalabraEnArchivoTexto</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
