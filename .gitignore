@@ -1,3 +1,7 @@
 /ConConsola/ConvertirArchivoTextoABinario/target/
 /ConConsola/CargarArchivoDeTexto/target/
 /ConConsola/ConvertirArchivoBinarioATexto/target/
+/ConConsola/ConvertirArchivoBase64ABinario/target/
+/ConConsola/EncriptarArchivoTextoSHA256/target/
+/ConConsola/ListarPalabrasFrecuenciaDeOcurrencia/target/
+/ConConsola/BuscarPalabraEnArchivoTexto/target/
